@@ -1,6 +1,6 @@
-angular.module('seedApp.controllers', [])
+var app = angular.module('seedApp.controllers', []);
 
-.controller('NavCtrl', function($scope, $ionicSideMenuDelegate) {
+app.controller('NavCtrl', function($scope, $ionicSideMenuDelegate) {
   $scope.showMenu = function () {
     $ionicSideMenuDelegate.toggleLeft();
   };
@@ -9,4 +9,11 @@ angular.module('seedApp.controllers', [])
   };
 })
 .controller('HomeTabCtrl', function($scope) {
+});
+
+app.directive("ex-directive", function () {
+  return {
+    restrict: "E",
+    templateUrl: ''
+  };
 });

@@ -64,6 +64,14 @@ angular.module('seedApp', ['ionic', 'seedApp.controllers'])
           templateUrl: "contact.html"
         }
       }
+    })
+    .state('tabs.filter', {
+      url: "/filter",
+      views: {
+        'filter-tab': {
+          templateUrl: "filter.html"
+        }
+      }
     });
 
 
